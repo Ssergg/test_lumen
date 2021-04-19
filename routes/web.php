@@ -11,6 +11,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+use Illuminate\Support\Facades\Route;
+
+$router->get('/products', 'ProductsController@show');
+$router->post('/products/{productId}', 'ProductsController@store');
+$router->put('/products/{productId}', 'ProductsController@update');
+$router->delete('/products/{productId}', 'ProductsController@delete');
+
+
