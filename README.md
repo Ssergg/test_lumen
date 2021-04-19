@@ -9,4 +9,4 @@ Configure local server
 
 Create .env file using .env.example
 
-Use postman collection:  Recently Viewed Products.postman_collection
+Use postman collection:  Recently Viewed Products.postman_collection.json
